@@ -1,0 +1,48 @@
+.para{
+    color: green;
+}
+
+#task_4{
+    background-color: aquamarine;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+#changeImage{
+    background-color: rgb(151, 148, 148);
+    padding: 10px;
+    border-radius: 15px;
+}
+#changeImage:hover{
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+#sectionSwap{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sec_one{
+    background-color: rgb(158, 133, 207);
+    padding: 50px;
+    border-radius: 15px;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+#sec_two{
+    background-color: wheat;
+    padding: 50px;
+    border-radius: 15px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#swapBoxes{
+    background-color: rgb(247, 144, 18);
+    padding: 5px 10px;
+    border-radius: 10px;
+}

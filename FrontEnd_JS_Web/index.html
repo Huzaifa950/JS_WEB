@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Class Questions -->
+    <div id="one">
+        Kaleem
+        <p>Mujtaba</p>
+        <h1>Ahmad</h1>
+    </div>
+
+    <!-- Task_1 -->
+    <div id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum doloribus laborum dolores eos! Repudiandae sunt, exercitationem ea ipsam sequi a magnam esse. Deleniti dolore sequi dolorem sint recusandae pariatur corrupti.
+    </div>
+
+    <!-- Task_2 -->
+    <h1>Ahmad</h1>
+    <h1>Mujtaba</h1>
+    <h1>Kainat</h1>
+
+    <!-- Task_3 -->
+    <div>
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est voluptate illo perferendis nihil nulla totam maxime dolorem, dolorum eos beatae, hic, ipsam laudantium natus sapiente dolore. Mollitia magni minus labore.</p>
+        <h1 class="para">Muhammad Huzaifa</h1>
+        <section class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sequi repellendus modi magni neque accusantium tempore, aperiam repellat, molestias nulla delectus assumenda tenetur sed! Eveniet animi natus iste fugit commodi.</section>
+    </div>
+
+    <!-- Task_4 -->
+    <div>
+        <button id="task_4"  onclick="this.innerHTML='Button is Clicked'">Click Me</button>
+    </div>
+
+    <!-- Task_5 -->
+    <div>
+
+    </div>
+
+    <!-- Task_6 -->
+    <div>
+        <p id="background" onmousemove="backgroundChange()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore nostrum, quibusdam maxime adipisci voluptate. Repellendus obcaecati debitis repellat totam quod nesciunt nobis tenetur, temporibus quo dignissimos, voluptatibus quasi animi.</p>
+    </div>
+    
+    <!-- Task_7 -->
+    <button id="changeImage" onclick="replaceImage()">Click Here to change Image</button>
+
+    <img id="imageChange" src="./son-helping-his-father-wheelchair-near-nursing-home.jpg" alt="Care" width="40%">
+
+    <!-- Task_8 -->
+    <form>
+        <br><br><br><br>
+        <h1 id="customMessage"></h1>
+        <br><br><br><br>
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" class="name">
+
+        <br><br>
+
+        <label for="message">Any Message</label>
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+
+        <button onclick="display()">Submit</button>
+        
+    </form>
+    
+
+    <!-- Task_9 -->
+    <label id="book" for="bookreading">Book Reading</label>
+    <input type="checkbox" name="bookreading" onclick="strike()"><br>
+
+    <label id="cric" for="cricket">Cricket</label>
+    <input type="checkbox" name="cricket" onclick="strike1()"><br>
+
+    <label id="foot" for="football">Football</label>
+    <input type="checkbox" name="football" onclick="strike2()"><br>
+
+    <label id="photo" for="photography">Photography</label>
+    <input type="checkbox" name="photography" onclick="strike3()"><br>
+
+    <label id="movie" for="movies">Movies</label>
+    <input type="checkbox" name="movies" onclick="strike4()"><br>
+
+    <!-- Task_10 -->
+    <div id="exist">
+        Already Existing Div.
+    </div>
+
+    <!-- Task_11 -->
+    <ul id="cities">
+        <li>Lahore</li>
+        <li>Islamabad</li>
+        <li>Karachi</li>
+        <li>Sukkur</li>
+    </ul>
+    <button id="remove" onclick="removeElement()">Remove Item</button>
+
+    <!-- Task_12 -->
+    <ul id="add_Item">
+        <li>Waqas</li>
+        <li>Shaani</li>
+        <li>Butt</li>
+    </ul>
+
+    <!-- Task_13 -->
+    <div id="parent">
+        <img id="oldChild" src="./omar-ram-xH6zaxF3k6Q-unsplash.jpg" alt="football" width="30%">
+    </div>
+
+    <!-- Task_14 -->
+    <div id="sectionSwap">
+        <section id="sec_one">
+            Left Side
+        </section>
+        <section id="sec_two">
+            Right Side
+        </section>
+    </div>
+
+    <button id="swapBoxes" onclick="swap()">Swap</button>
+
+    <!-- Task_15 -->
+    <form class="FormParent">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="EnterName" id="name" class="name">
+
+        <label for="email">Email: </label>
+        <input type="email" placeholder="EnterMail" id="email" class="email">
+
+        <label for="age">Age: </label>
+        <input type="number" placeholder="EnterAge" id="age" class="age">
+    </form>
+
+    <!-- Task_16 -->
+    <div>
+        <h1 class="heading">Task 16</h1>
+        <h3>Create a button on a webpage. Attach an event listener using addEventListener to change the button's text to "Clicked!" when it's clicked</h3>
+        <div id="listener">
+            <button id="text">Click Me!</button>
+        </div>
+        <script>
+            const listener = document.getElementById('listener');
+            listener.addEventListener('click' , function(event){
+                const text = document.getElementById('text');
+                text.innerHTML = 'Changed Text'
+            });
+            </script>
+    </div>
+
+
+    <!-- Task_17 -->
+    <div>
+        <img id="prevImg" src="./jannes-glas-0NaQQsLWLkA-unsplash.jpg" alt="img" width="45%" onmouseover="magic()" onmouseout="magicBack()">;
+    </div>
+
+
+    <!-- Task_18 -->
+    <div>
+        <h1 class="heading">Task 18</h1>
+        <h3>Build a registration form with input fields for name, email, and password. Use the submit event on the form to validate that the password is at least 8 characters long. Display an error message if the validation fails</h3>
+        <div>
+            <form id="regForm">
+                <label for="name">Enter your name <input type="text" name="name" id="getName" placeholder="name here"></label>
+                <label for="email">Enter your email <input type="email" name="email" id="getemail" placeholder="email here"></label>
+                <label for="password">Enter password <input type="password" name="password" id="getpass" placeholder="password here"></label>
+                <input type="submit" value="Register">
+                <span id="error"></span>
+            </form>
+            <script>
+                const regForm = document.getElementById('regForm');
+                const password = document.getElementById('getpass');
+                const error = document.getElementById('error');
+
+                regForm.addEventListener('submit', function(event) {
+                    const passwordValue = password.value;
+                    if (passwordValue.length < 8) {
+                        const error = document.getElementById('error');
+                        error.innerHTML = 'Password must be atleast 8 char!';
+                        event.preventDefault();
+                    }
+                });
+            </script>
+            
+        </div>
+    </div>
+</body>
+
+
+
+<script>
+
+    // Class Task One
+    const one = document.getElementById('one');
+    one.removeChild(one.firstChild);
+
+
+    // task_1
+    const first = document.getElementById('first');
+    console.log(first);
+
+    // task_2
+    console.log(document.getElementsByTagName('h1'));
+
+    // task_3
+    const task_3 = document.getElementsByClassName('para');
+    // console.log(task_3[0]);
+    task_3[1].style.color = "red";
+
+    // task_6
+    const backgroundChange = () =>{
+        document.getElementById('background').style.backgroundColor = "orange";
+    }
+
+    // task_7
+    const replaceImage = () =>{
+        const element = document.getElementById('imageChange');
+        element.setAttribute('src', './ruben-leija-jY_knL-TVvA-unsplash.jpg')
+    }
+
+    //task_8   
+    const display =() =>{
+        const elem = document.getElementById('customMessage');
+        elem.innerText = 'Thanks for submitting your Response';
+    }
+
+    // task_9
+    const strike = ()=>{
+        const eleme = document.getElementById('book');
+        eleme.style.border='3px solid black';
+    }
+    const strike1 = ()=>{
+        const eleme = document.getElementById('cric');
+        eleme.style.border='3px solid black';
+    }
+    const strike2 = ()=>{
+        const eleme = document.getElementById('foot');
+        eleme.style.border='3px solid black';
+    }
+    const strike3 = ()=>{
+        const eleme = document.getElementById('photo');
+        eleme.style.border='3px solid black';
+    }
+    const strike4 = ()=>{
+        const eleme = document.getElementById('movie');
+        eleme.style.border='3px solid black';
+    }
+
+    // task_10
+    const newElement = document.createElement('p').innerHTML = 'Appending new Paragraph';
+    document.getElementById('exist').append(newElement);
+
+    // task_11
+    const removeElement=()=>{
+        const rem = document.getElementById('cities');
+        rem.removeChild(rem.lastChild)
+    }
+
+    // task_12
+    const new_Element = document.createElement('li');
+    new_Element.innerHTML = 'Huzaifa Added';
+    document.getElementById('add_Item').appendChild(new_Element);
+
+    // task_13
+    const parent = document.getElementById("parent");
+    const oldChild = document.getElementById("oldChild");
+    const repChild = document.createElement('img');
+    repChild.src = './nature-landscape-hd-usqznq19dscdjkf8.jpg' 
+    repChild.style.width = '35%';
+    parent.replaceChild(repChild, oldChild);
+
+    // Task_14
+    const swap=()=>{
+        const parent = document.getElementById('sectionSwap');
+
+        const sec1 = document.getElementById('sec_one');
+        const sec2 = document.getElementById('sec_two');
+
+        parent.replaceChild(sec2, sec1);
+        parent.replaceChild(sec1, sec2);
+    }
+
+    // Task_17
+    const magic=()=>{
+        const prevImg = document.getElementById('prevImg');
+        prevImg.src = './omar-ram-xH6zaxF3k6Q-unsplash.jpg'
+    }
+    const magicBack=()=>{
+        const prevImg = document.getElementById('prevImg');
+        prevImg.src = './jannes-glas-0NaQQsLWLkA-unsplash.jpg';
+    }
+
+</script>
+</html>
